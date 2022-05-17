@@ -13,7 +13,6 @@
   <body>
     <header class="navi-2">
       <h1 style="text-align:center; ">Dirt bike wiki</h1>
-      
     </header> 
 
     <div class="navi-2"style="text-align: center;">
@@ -26,21 +25,87 @@
     </div>
     
 <!-- NAV -->
+    <style>
+body {
+  font-family: "Lato", sans-serif;
+}
 
-      <nav class="navi"id="menu">
-        <ul class="links">
-          <li><a href="Honda.html">Honda</a>
-          <li><a href="Kawasaki.html">Kawasaki</a>
-          <li><a href="Suzuki.html">Suzuki</a>
-          <li><a href="5Yamaha.html">Yamaha</a>
-          <li><a href="KTM.html">KTM</a>
-          <li><a href="GasGas.html">GasGas</a>
-          <li><a href="Husqvarna.html">Husqvarna</a>
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
 
-          
-        </ul>
-      </nav>
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
 
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="Honda.html">Honda</a>
+  <a href="Kawasaki.html">Kawasaki</a>
+  <a href="Suzuki.html">Suzuki</a>
+  <a href="Yamaha.html">Yamaha</a>
+  <a href="KTM.html">KTM</a>
+  <a href="GasGas.html">GasGas</a>
+   <a href="Husqvarna.html">Husqvarna</a>
+  
+
+
+</div>
+
+
+
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+
+
+
+    
     <ul style="z-index: -1;" class="cb-slideshow">
     <li>
         <span>Image 01</span>
@@ -63,7 +128,7 @@
       <li><span>Image 06</span>
         <div>
             <h3></h3></li>
-<li><span>Image 07</span>
+<li><span>Image gay 07</span>
         <div>
             <h3></h3></li>
     </ul>
@@ -98,9 +163,9 @@ img {vertical-align: middle;}
 <div class="copyright">
 &copy; Cresty1
 </div>
-</footer>
+
   
-</footer>
+
 
 
 
@@ -111,5 +176,6 @@ img {vertical-align: middle;}
 
   
   <script src="script.js"></script>
+  <script src="assets/js/util.js"></script>
   </body>
 </html>

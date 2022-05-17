@@ -39,4 +39,18 @@ var i;
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
+
+
+
+    
 </script>
+  
+/* Set the width of the side navigation to 250px /
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/ Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
